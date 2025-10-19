@@ -133,61 +133,34 @@ const Index = () => {
 
 
       <section id="join" className="py-20 px-4 bg-background">
-        <div className="container mx-auto max-w-2xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-primary">
+        <div className="container mx-auto max-w-2xl text-center">
+          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-primary">
             ВСТУПИТЬ В КЛАН
           </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            Заполни заявку и стань частью DST
+          <p className="text-muted-foreground mb-12 text-lg">
+            Присоединяйся к нам в Discord
           </p>
           <Card className="bg-card border-2 border-primary">
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-bold mb-2 text-foreground">
-                    ИГРОВОЙ НИК
-                  </label>
-                  <Input 
-                    required
-                    placeholder="Твой ник в Rust"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-input border-border focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2 text-foreground">
-                    DISCORD
-                  </label>
-                  <Input 
-                    required
-                    placeholder="username#1234"
-                    value={formData.discord}
-                    onChange={(e) => setFormData({ ...formData, discord: e.target.value })}
-                    className="bg-input border-border focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold mb-2 text-foreground">
-                    О СЕБЕ
-                  </label>
-                  <Textarea 
-                    required
-                    placeholder="Опыт в Rust, часов в игре, твои сильные стороны..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-input border-border focus:border-primary min-h-32"
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg shadow-[0_0_20px_rgba(255,107,53,0.4)] hover:shadow-[0_0_30px_rgba(255,107,53,0.6)]"
-                >
-                  <Icon name="Send" className="mr-2" size={20} />
-                  ОТПРАВИТЬ ЗАЯВКУ
-                </Button>
-              </form>
+            <CardContent className="p-12">
+              <div className="mb-8">
+                <Icon name="MessageCircle" className="text-primary mx-auto mb-4" size={80} />
+                <p className="text-foreground text-lg mb-2">
+                  Все обсуждения и заявки проходят в нашем Discord-сервере
+                </p>
+                <p className="text-muted-foreground">
+                  Присоединяйся и стань частью команды DST
+                </p>
+              </div>
+              <Button 
+                size="lg" 
+                asChild
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg px-12 py-6 shadow-[0_0_20px_rgba(255,107,53,0.4)] hover:shadow-[0_0_30px_rgba(255,107,53,0.6)]"
+              >
+                <a href="https://discord.gg/qcu8n8rRg6" target="_blank" rel="noopener noreferrer">
+                  <Icon name="ExternalLink" className="mr-2" size={20} />
+                  ПРИСОЕДИНИТЬСЯ К DISCORD
+                </a>
+              </Button>
             </CardContent>
           </Card>
         </div>
