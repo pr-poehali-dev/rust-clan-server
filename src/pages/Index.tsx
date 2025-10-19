@@ -227,9 +227,7 @@ const Index = () => {
 
       <footer className="py-8 px-4 bg-card/50 border-t-2 border-primary">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2024 КЛАН DST • RUST SURVIVORS
-          </p>
+          <p className="text-muted-foreground text-sm">© 2024 КЛАН DST • RUST </p>
         </div>
       </footer>
     </div>
