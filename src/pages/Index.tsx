@@ -133,36 +133,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="members" className="py-20 px-4 bg-card/50">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-5xl md:text-6xl font-bold text-center mb-4 text-primary">
-            УЧАСТНИКИ
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            Элита клана DST
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {members.map((member, index) => (
-              <Card 
-                key={index} 
-                className="bg-card border-2 border-border hover:border-primary transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,107,53,0.3)]"
-              >
-                <CardContent className="p-6 text-center">
-                  <div className="w-20 h-20 bg-primary/20 border-2 border-primary mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" className="text-primary" size={40} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">Safarik</h3>
-                  <p className="text-muted-foreground mb-3">{member.role}</p>
-                  <div className="flex items-center justify-center text-sm">
-                    <Icon name="Skull" className="text-destructive mr-2" size={16} />
-                    <span className="text-foreground font-bold">{member.kills} убийств</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section id="join" className="py-20 px-4 bg-background">
         <div className="container mx-auto max-w-2xl">
