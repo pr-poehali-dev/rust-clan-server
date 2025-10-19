@@ -151,7 +151,7 @@ const Index = () => {
                   <div className="w-20 h-20 bg-primary/20 border-2 border-primary mx-auto mb-4 flex items-center justify-center">
                     <Icon name="User" className="text-primary" size={40} />
                   </div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">{member.name}</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">SKELETON</h3>
                   <p className="text-muted-foreground mb-3">{member.role}</p>
                   <div className="flex items-center justify-center text-sm">
                     <Icon name="Skull" className="text-destructive mr-2" size={16} />
