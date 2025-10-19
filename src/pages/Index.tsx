@@ -99,10 +99,7 @@ const Index = () => {
                     <Icon name="Check" className="text-primary mr-2" size={20} />
                     ТОП-3 клан на 5 серверах
                   </li>
-                  <li className="flex items-center">
-                    <Icon name="Check" className="text-primary mr-2" size={20} />
-                    50+ активных участников
-                  </li>
+                  <li className="flex items-center">25+ активных участников</li>
                 </ul>
               </CardContent>
             </Card>
